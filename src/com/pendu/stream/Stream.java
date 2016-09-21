@@ -8,7 +8,7 @@ import java.io.LineNumberReader;
 public class Stream 
 {
 	
-	private int nbre = (int)(Math.random()*336529);
+	private int nbr = (int)(Math.random()*336529);
 	private String txt= null;
 	private int line;
 	
@@ -19,7 +19,7 @@ public class Stream
 			LineNumberReader readLine = new LineNumberReader(readBuffer))
 		{
 			
-			readLine.setLineNumber(nbre);
+			readLine.setLineNumber(nbr);
 			line = readLine.getLineNumber();
 			
 			for(int i = 0; i < line; i++)
@@ -35,9 +35,9 @@ public class Stream
 		
 	}
 	
-	public void setTxt(String mot)
+	public void setTxt(String word)
 	{
-		this.txt = mot;
+		this.txt = word;
 	}
 	
 	public String getTxt()

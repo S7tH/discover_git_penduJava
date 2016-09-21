@@ -43,7 +43,7 @@ public class Party extends JPanel
 	{
 		
 		
-		wordCount.setText("Nombre de mots trouvés : "+wordsCount);
+		wordCount.setText("Nombre de mots trouvÃ©s : "+wordsCount);
 		score.setText("Votre score actuel est de : "+scores);
 		
 		screenResult.setLayout(new GridLayout(2,1));
@@ -55,9 +55,6 @@ public class Party extends JPanel
 		
 		screenHiddenWord.add(hiddenWord);
 		keyboardLetter();
-		
-		
-		
 		
 		
 		this.setLayout(new GridLayout(2,2));
@@ -86,7 +83,7 @@ public class Party extends JPanel
 	
 	public String dicoWord()
 	{
-		//on récupère le mot random du dico  
+		//on rÃ©cupÃ©re le mot random du dico  
 		return this.dicoWord = mixedWord.getTxt();
 	}
 	
@@ -156,11 +153,12 @@ public class Party extends JPanel
 				{
 					wordsCount++;
 					scores++;
-					wordCount.setText("Nombre de mots trouvés : "+wordsCount);
+					wordCount.setText("Nombre de mots trouvÃ©s : "+wordsCount);
 					score.setText("Votre score actuel est de : "+scores);
 					hiddenWord.setText("GAGNE");
-					dicoWord();
-					faults = 0;
+					
+					faults =0; 
+					
 				}
 				else
 				{
@@ -180,9 +178,9 @@ public class Party extends JPanel
 				ScreenImage.removeAll();
 				ScreenImage.add(hanged);
 				hiddenWord.setText("PERDU");
-
 				
-				validate();
+				
+			
 				faults = 0;
 				
 				

@@ -21,7 +21,7 @@ public class Accueil extends JPanel
 	public Accueil()
 	{
 		
-		//création d'une variable provoquant un retour à la ligne
+		//crÃ©ation d'une variable provoquant un retour Ã© la ligne
 		String newligne = System.getProperty("line.separator");
 		
 		//initialisation de variable de leur texte
@@ -30,11 +30,11 @@ public class Accueil extends JPanel
 		
 		imgPendu = new JLabel(new ImageIcon("pendu/1.jpg"));
 		
-		String but = "Vous avez 7 coups pour trouver le mot caché !"
+		String but = "Vous avez 7 coups pour trouver le mot cachÃ© !"
 					+ newligne
 					+" si vous reussissez... on recommence!"
 					+ newligne
-					+" Plus vous trouverez de mots, plus votre score sera élevé.";
+					+" Plus vous trouverez de mots, plus votre score sera Ã©levÃ©.";
 		
 		notice = new JTextField(but);
 		notice.setEditable(false);

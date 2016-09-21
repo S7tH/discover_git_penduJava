@@ -22,19 +22,19 @@ public class Regles extends JPanel
 		
 		String newligne = System.getProperty("line.separator");
 		
-		String texte = "Vous avez 7 coups pour trouver le mot caché ! si vous reussissez... on recommence! \n"
-				+"Plus vous trouverez de mots, plus votre score sera élevé.\n"
+		String texte = "Vous avez 7 coups pour trouver le mot cachÃ© ! si vous reussissez... on recommence! \n"
+				+"Plus vous trouverez de mots, plus votre score sera Ã©levÃ©.\n"
 				+ newligne
 				+ newligne
 				+"COMPTE DES POINTS:\n"
 				+"\n"
-				+" Mot trouvé sans erreur:     100Pts \n"
-				+" Mot trouvé avec  1 erreur:  50Pts \n"
-				+" Mot trouvé avec  2 erreurs: 35Pts \n"
-				+" Mot trouvé avec  3 erreurs: 25Pts \n"
-				+" Mot trouvé avec  4 erreurs: 15Pts \n"
-				+" Mot trouvé avec  5 erreurs: 10Pts \n"
-				+" Mot trouvé avec  6 erreurs:  5Pts \n"
+				+" Mot trouvÃ© sans erreur:     100Pts \n"
+				+" Mot trouvÃ© avec  1 erreur:  50Pts \n"
+				+" Mot trouvÃ© avec  2 erreurs: 35Pts \n"
+				+" Mot trouvÃ© avec  3 erreurs: 25Pts \n"
+				+" Mot trouvÃ© avec  4 erreurs: 15Pts \n"
+				+" Mot trouvÃ© avec  5 erreurs: 10Pts \n"
+				+" Mot trouvÃ© avec  6 erreurs:  5Pts \n"
 				+"\n"
 				+"\n"
 				+"Je vous souhaite bien du plaisir...";

@@ -20,14 +20,13 @@ public class Fenetre extends JFrame
 	private JMenu aPropos = new JMenu("A propos");
 	private JMenuItem nouveau = new JMenuItem("Nouveau");
 	private JMenuItem score = new JMenuItem("Score");
-	private JMenuItem regles = new JMenuItem("Règles");
+	private JMenuItem regles = new JMenuItem("RÃ¨gles");
 	private JMenuItem home = new JMenuItem("Accueil");
 	
 	
 
 	
 	//instances d'objets
-
 	private Accueil accueil = new Accueil();
 	private Regles rules = new Regles();
 	private Party party = new Party();
@@ -47,55 +46,44 @@ public class Fenetre extends JFrame
 	public void initMenuBar()
 	{
 		nouveau.addActionListener(new PartyListener());
-		
 		this.fichier.add(nouveau);
 		this.fichier.add(score);
-		
 		regles.addActionListener(new ReglesListener());
-		
 		this.fichier.add(regles);
-		
 		home.addActionListener(new AccueilListener());
-		
 		this.aPropos.add(home);
 
 		this.menuBar.add(fichier);
 		this.menuBar.add(aPropos);
 		this.setJMenuBar(menuBar);
-		
-		
 	}
 	
 	class PartyListener implements ActionListener
 	{
-
 		public void actionPerformed(ActionEvent arg0) 
 		{
-			setContentPane(party);
-			validate();
-			
+			if(getContentPane() == party)
+			{
+				party = new Party();
+			}
+				setContentPane(party);
+				validate();
 		}
-		
 	}
 	
 	class ReglesListener implements ActionListener
 	{
-
 		public void actionPerformed(ActionEvent arg0) 
 		{
 			setContentPane(rules);
-			validate();
-			
+			validate();	
 		}
-		
 	}
 	
 	class AccueilListener implements ActionListener
 	{
-
 		public void actionPerformed(ActionEvent arg0) 
 		{
-			
 			setContentPane(accueil);
 			validate();
 		}
@@ -103,15 +91,10 @@ public class Fenetre extends JFrame
 	}
 	
 
-
 	//main
 	public static void main(String[] args)
 	{
-		
-		
 		Fenetre fen = new Fenetre();
-		fen.setVisible(true);	}
-
-	
-	
+		fen.setVisible(true);	
+	}
 }
